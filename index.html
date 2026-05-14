@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>33ADMEDIA — CV & Business Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+</head>
+<body data-theme="dark">
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+<!--     <a href="#" class="logo">33AD<span>Media</span></a> -->
+      <span class="logo">
+        <img src="33admedia.jpeg" alt="33ADMEDIA">
+      </span>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why-us">Why Us</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+      <button class="btn btn-gold" onclick="openModal('cv')">Get My CV </button>
+      <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV MENU -->
+<div id="mobileNav" style="position:fixed;top:68px;left:0;right:0;background:var(--nav-bg);backdrop-filter:blur(16px);z-index:999;border-bottom:1px solid var(--border);padding:1rem 5%;display:none;flex-direction:column;gap:1rem">
+  <a href="#services" onclick="toggleNav()">Services</a>
+  <a href="#why-us" onclick="toggleNav()">Why Us</a>
+  <a href="#testimonials" onclick="toggleNav()">Reviews</a>
+  <a href="#faq" onclick="toggleNav()">FAQ</a>
+  <a href="#contact" onclick="toggleNav()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+  </div>
+  <div class="hero-grid">
+    <div>
+      <div class="hero-badge">CV & Business Services</div>
+      <h1>Get Your <em>Dream Job</em> With a Professional CV</h1>
+      <p class="hero-sub">
+        Professional CV writing, cover letters, LinkedIn optimization & career support that helps you stand out. 
+        Plus expert business branding & digital solutions.
+      </p>
+      <div class="hero-ctas">
+        <button class="btn btn-gold btn-lg" onclick="openModal('cv')">Get My CV Written</button>
+        <button class="btn btn-outline btn-lg" onclick="openModal('biz')">Request Business Services →</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><span class="stat-num" data-count="200">0</span><span class="stat-label">CVs Written</span></div>
+        <div class="stat-item"><span class="stat-num" data-count="98">0</span><span class="stat-label">% Success Rate</span></div>
+        <div class="stat-item"><span class="stat-num" data-count="210">0</span><span class="stat-label">Business Clients</span></div>
+        <div class="stat-item"><span class="stat-num" data-count="24">0</span><span class="stat-label">Hr Turnaround</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-stack">
+        <div class="cv-card cv-card-back2">
+          <div class="cv-avatar">📊</div>
+          <div class="cv-line w-3"></div>
+          <div class="cv-line w-2"></div>
+        </div>
+        <div class="cv-card cv-card-back1">
+          <div class="cv-avatar">🎨</div>
+          <div class="cv-line w-full"></div>
+          <div class="cv-line w-3"></div>
+        </div>
+        <div class="cv-card cv-card-main">
+          <div class="cv-avatar">👤</div>
+          <div class="cv-name">Alexandra M.</div>
+          <div class="cv-title">Senior Product Manager</div>
+          <div class="cv-line w-full"></div>
+          <div class="cv-line w-3"></div>
+          <div class="cv-line w-full"></div>
+          <div class="cv-line w-2"></div>
+          <div style="margin-top:0.75rem">
+            <span class="cv-tag">Leadership</span>
+            <span class="cv-tag">Strategy</span>
+            <span class="cv-tag">ATS ✓</span>
+          </div>
+        </div>
+        <!-- <div class="float-badge badge-hired">🎉 Just Got Hired!</div> -->
+        <div class="float-badge badge-ats">✅ ATS Optimized</div>
+        <!-- <div class="float-badge badge-star">⭐ 5.0 Rating</div> -->
+        <div class="float-badge badge-hired">🎉 I Just got an interview pass call </div>
+        <!-- <div class="float-badge badge-ats">✅ ATS Optimized</div> -->
+        <!-- <div class="float-badge badge-star">⭐ 5.0 Rating</div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="section-head text-center reveal">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Comprehensive Services<br>For Your Success</h2>
+      <p class="section-sub">From career-defining CVs to powerful business branding — we have everything you need to grow.</p>
+    </div>
+    <div class="services-tabs reveal">
+      <button class="tab-btn active" onclick="switchTab('cv')">CV & Career Services</button>
+      <button class="tab-btn" onclick="switchTab('biz')">Business Services</button>
+    </div>
+    <div id="tab-cv" class="services-grid">
+      <div class="service-card reveal reveal-delay-1"><div class="service-icon">📄</div><h3>CV Writing</h3><p>Professionally crafted CVs that highlight your strengths, experience, and value to employers.</p><div class="service-link" onclick="openModal('cv')">Get Started →</div></div>
+      <div class="service-card reveal reveal-delay-2"><div class="service-icon">✨</div><h3>CV Revamp</h3><p>Transform your existing CV into a modern, ATS-friendly document that gets noticed.</p><div class="service-link" onclick="openModal('cv')">Get Started →</div></div>
+      <div class="service-card reveal reveal-delay-3"><div class="service-icon">📝</div><h3>Cover Letter</h3><p>Compelling, personalized cover letters tailored to specific roles and companies.</p><div class="service-link" onclick="openModal('cv')">Get Started →</div></div>
+      <div class="service-card reveal reveal-delay-4"><div class="service-icon">💼</div><h3>LinkedIn Profile</h3><p>Optimized LinkedIn profiles that attract recruiters and showcase your professional brand.</p><div class="service-link" onclick="openModal('cv')">Get Started →</div></div>
+      <div class="service-card reveal reveal-delay-1"><div class="service-icon">🎯</div><h3>ATS-Friendly Resume</h3><p>Keyword-optimized resumes designed to pass applicant tracking systems every time.</p><div class="service-link" onclick="openModal('cv')">Get Started →</div></div>
+      <div class="service-card reveal reveal-delay-2"><div class="service-icon">🌟</div><h3>Executive CV</h3><p>Premium executive-level CVs for senior professionals, directors, and C-suite candidates.</p><div class="service-link" onclick="openModal('cv')">Get Started →</div></div>
+    </div>
+    <div id="tab-biz" class="services-grid" style="display:none">
+      <div class="service-card reveal reveal-delay-1"><div class="service-icon">🎨</div><h3>Branding</h3><p>Full brand identity design — logos, color palettes, typography, and brand guidelines.</p><div class="service-link" onclick="openModal('biz')">Inquire Now →</div></div>
+      <div class="service-card reveal reveal-delay-2"><div class="service-icon">📱</div><h3>Social Media</h3><p>Strategic social media management that grows your audience and drives engagement.</p><div class="service-link" onclick="openModal('biz')">Inquire Now →</div></div>
+      <div class="service-card reveal reveal-delay-3"><div class="service-icon">🌐</div><h3>Website Development</h3><p>Modern, responsive websites built to convert visitors into customers.</p><div class="service-link" onclick="openModal('biz')">Inquire Now →</div></div>
+      <div class="service-card reveal reveal-delay-4"><div class="service-icon">🖌️</div><h3>Graphic Design</h3><p>Creative designs for print, digital, presentations, and marketing materials.</p><div class="service-link" onclick="openModal('biz')">Inquire Now →</div></div>
+      <div class="service-card reveal reveal-delay-1"><div class="service-icon">📈</div><h3>Digital Marketing</h3><p>Data-driven marketing strategies to grow your reach and maximize ROI.</p><div class="service-link" onclick="openModal('biz')">Inquire Now →</div></div>
+      <div class="service-card reveal reveal-delay-2"><div class="service-icon">🔍</div><h3>SEO Services</h3><p>Comprehensive SEO audits, optimization, and content strategies for organic growth.</p><div class="service-link" onclick="openModal('biz')">Inquire Now →</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why-us" style="background:var(--bg2)">
+  <div class="section-inner">
+    <div class="why-grid">
+      <div class="reveal">
+        <div class="section-label">Why Choose 33ADMEDIA</div>
+        <h2 class="section-title">Built Around Your Success</h2>
+        <p class="section-sub" style="margin-bottom:2rem">We combine industry expertise with personalized service to deliver results that matter.</p>
+        <div class="why-features">
+          <div class="why-item"><div class="why-icon">⚡</div><div class="why-text"><h4>Fast Turnaround</h4><p>Professional CVs delivered within 24 hours. Business projects scoped and started within days.</p></div></div>
+          <div class="why-item"><div class="why-icon">✍️</div><div class="why-text"><h4>Expert Writers & Designers</h4><p>Certified professionals with 10+ years of experience across industries and sectors.</p></div></div>
+          <div class="why-item"><div class="why-icon">🤖</div><div class="why-text"><h4>ATS-Optimized</h4><p>Every CV is crafted to pass modern applicant tracking systems with the right keywords.</p></div></div>
+          <div class="why-item"><div class="why-icon">💰</div><div class="why-text"><h4>Affordable Pricing</h4><p>Competitive packages for individuals and businesses without compromising on quality.</p></div></div>
+          <div class="why-item"><div class="why-icon">🎧</div><div class="why-text"><h4>Dedicated Support</h4><p>WhatsApp, email, and phone support throughout your project lifecycle.</p></div></div>
+        </div>
+      </div>
+      <div class="counters-grid reveal">
+        <div class="counter-box"><span class="counter-num" data-count="200">0</span><div class="counter-label">CVs Written</div></div>
+        <div class="counter-box"><span class="counter-num" data-count="210">0</span><div class="counter-label">Business Clients</div></div>
+        <div class="counter-box"><span class="counter-num" data-count="98">0</span><div class="counter-label">% Satisfaction</div></div>
+        <div class="counter-box"><span class="counter-num" data-count="27">0</span><div class="counter-label">Countries Served</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials-section">
+  <div class="section-inner">
+    <div class="section-head text-center reveal">
+      <div class="section-label">Client Stories</div>
+      <h2 class="section-title">What Our Clients Said</h2>
+    </div>
+    <div class="testimonials-slider reveal">
+      <div class="testimonials-track" id="testimTrack">
+        <div class="testimonial-card"><div class="t-stars">★★★</div>
+        <p class="t-text">
+            "33ADMEDIA transformed my dusty old CV into a sleek, powerful document. Within 2 weeks I had 3 interview calls. Absolutely worth every penny!"
+        </p>
+        <div class="t-author">
+            <div class="t-avatar">
+                SM
+            </div>
+            <div>
+                <div class="t-name">
+                    Samuel M.
+                </div>
+                <div class="t-service">
+                    CV Writing
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="testimonial-card">
+            <div class="t-stars">
+                ★★★★
+            </div>
+            <p class="t-text">
+                "Their branding team completely reinvented our company image. The new logo and brand guidelines gave us the professional presence we needed to win bigger contracts."
+            </p>
+            <div class="t-author">
+                <div class="t-avatar">
+                    FN
+                </div>
+                <div>
+                    <div class="t-name">
+                        Fatima N.
+                    </div>
+                    <div class="t-service">
+                        Branding
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card"><div class="t-stars">
+            ★★
+        </div>
+        <p class="t-text">
+            "My LinkedIn went from 50 to 800+ connection requests in one month after 33ADMEDIA optimized my profile. Recruiters are now reaching out to ME!"
+        </p>
+        <div class="t-author">
+            <div class="t-avatar">
+                JK
+            </div>
+            <div>
+                <div class="t-name">
+                    James K.
+                </div>
+                <div class="t-service">
+                    LinkedIn Optimization
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="testimonial-card"><div class="t-stars">★★★★</div>
+        <p class="t-text">
+            "Their website dev team built us a stunning e-commerce site in record time. Sales increased by 40% in the first quarter. Highly recommend!"
+        </p>
+        <div class="t-author">
+            <div class="t-avatar">
+                AO
+            </div>
+            <div>
+                <div class="t-name">
+                    Amara O.
+                </div>
+                <div class="t-service">
+                    Website Development
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="testimonial-card"><div class="t-stars">
+            ★★★★
+
+        </div>
+        <p class="t-text">
+            "The executive CV package is phenomenal. I was applying for C-suite roles and the document 33ADMEDIA created truly reflected my 20 years of leadership."
+        </p>
+        <div class="t-author">
+            <div class="t-avatar">
+                DM
+            </div>
+            <div>
+                <div class="t-name">
+                    Dr. David M.
+                </div>
+                <div class="t-service">
+                    Executive CV
+                </div>
+            </div>
+        </div>
+    </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="slider-btn" onclick="slideTestim(-1)">←</button>
+      <button class="slider-btn" onclick="slideTestim(2)">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--bg2)">
+  <div class="section-inner">
+    <div class="section-head text-center reveal">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">
+        <span>
+            How long does CV writing take?
+        </span><span class="faq-icon">+</span></div><div class="faq-a">
+            <div class="faq-a-inner">
+                Standard CV writing takes 24–48 hours. Express delivery (12 hours) is available for an additional fee. Executive packages may take up to 72 hours to ensure the highest quality.
+            </div>
+        </div>
+    </div>
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">
+        <span>
+            Can I upload my old CV for a revamp?
+        </span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">
+            Absolutely! You can upload your existing CV as a starting point. Our team will revamp, modernize, and optimize it while preserving your key achievements and experience.
+        </div></div></div>
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">
+        <span>
+            Are your CVs ATS-friendly?
+        </span><span class="faq-icon">+</span></div><div class="faq-a">
+            <div class="faq-a-inner">
+                Yes! Every CV we write is optimized for Applicant Tracking Systems. We use relevant keywords, proper formatting, and clean structure that ATS software can easily parse.
+            </div></div></div>
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">
+        <span>
+            How long does a branding project take?
+        </span><span class="faq-icon">+</span></div><div class="faq-a">
+            <div class="faq-a-inner">
+                Basic logo design: 3–5 business days. Full brand identity packages: 1–2 weeks. Complex rebranding projects: 2–4 weeks depending on scope and revisions required.
+            </div></div></div>
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">
+        <span>
+            Do you offer revisions?
+        </span><span class="faq-icon">+</span></div><div class="faq-a">
+            <div class="faq-a-inner">
+                All packages include free revisions. Standard: 2 revisions. Premium: 3 revisions. Executive: unlimited revisions within 30 days. We want you to be 100% satisfied.
+            </div></div></div>
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">
+        <span>
+            What file formats do you deliver?
+
+        </span><span class="faq-icon">+</span></div><div class="faq-a">
+            <div class="faq-a-inner">CVs are delivered in PDF, DOCX, and editable formats. Design files come in PNG, SVG, PDF, and source files (AI/PSD) depending on the package selected.
+
+            </div></div></div>
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">
+        <span>
+            How do I pay?
+        </span><span class="faq-icon">+</span></div><div class="faq-a">
+            <div class="faq-a-inner">We accept M-Pesa, bank transfer, PayPal, and major credit cards. You can also request a free consultation before committing to payment.
+
+            </div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Let's Start Your Journey</h2>
+      <p class="section-sub">Ready to level up your career or business? Reach out today for a free consultation.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-info reveal">
+          <button class="whatsapp-cta" onclick="window.open('https://wa.me/254714903643?text=Hi%2033ADMEDIA!%20I%20am%20interested%20in%20your%20services.','_blank')">
+            <span style="font-size:2rem">💬</span>
+            <div style="text-align:left">
+                <strong style="display:block;font-size:1rem;margin-bottom:0.25rem">
+                    Chat on WhatsApp
+                </strong>
+                <span style="font-size:0.85rem;opacity:0.9">
+                    Fastest response — usually within minutes
+                </span>
+            </div>
+          </button>
+          <div class="contact-item"><div class="contact-item-icon">📞</div><div class="contact-item-text">
+            <strong>
+                Call Us
+            </strong>
+            <span>
+                +254 714 903 643
+            </span>
+        </div></div>
+          <div class="contact-item"><div class="contact-item-icon">📧</div><div class="contact-item-text">
+            <strong>
+                Email Us
+            </strong>
+            <span>
+                33admedia@gmail.com
+            </span>
+        </div></div>
+          <div class="contact-item"><div class="contact-item-icon">📍</div><div class="contact-item-text">
+            <strong>
+                Location
+            </strong>
+            <span>
+                Meru, Kenya (Serving Worldwide)
+            </span>
+        </div></div>
+          <div class="contact-item"><div class="contact-item-icon">🕒</div><div class="contact-item-text">
+            <strong>
+                Hours
+            </strong>
+            <span>Mon–Sat: 8am – 8pm EAT</span></div></div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <h3 style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;margin-bottom:1.5rem">Send Us a Message</h3>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Full Name</label><input class="form-input" placeholder="Lucky Victor" id="cName"/></div>
+          <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" placeholder="33admedia@gmail.com" id="cEmail"/></div>
+        </div>
+        <div class="form-group"><label class="form-label">Phone</label><input class="form-input" placeholder="+254 714 903 643" id="cPhone"/></div>
+        <div class="form-group"><label class="form-label">Service Interested In</label>
+          <select class="form-input" id="cService">
+            <option value="">Select a service...</option>
+            <option>CV Writing</option>
+            <option>CV Revamp</option>
+            <option>Cover Letter</option>
+            <option>LinkedIn Optimization</option>
+            <option>Branding</option>
+            <option>Website Development</option>
+            <option>Social Media Management</option>
+            <option>Graphic Design</option>
+            <option>Digital Marketing</option>
+            <option>SEO</option>
+          </select>
+        </div>
+        <div class="form-group"><label class="form-label">Message</label><textarea class="form-input" placeholder="Tell us about your needs..." id="cMessage"></textarea></div>
+        <button class="btn btn-gold" style="width:100%;justify-content:center;padding:0.875rem" onclick="submitContact()">Send Message </button>
+        <div id="contactSuccess" style="display:none;margin-top:1rem;background:rgba(26,122,74,0.1);border:1px solid rgba(26,122,74,0.3);color:#1A7A4A;padding:0.875rem;border-radius:var(--r);font-size:0.875rem">✅ Message sent! We'll be in touch within 24 hours.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <!--<span class="logo">33AD<span>MEDIA</span></span>-->
+      <span class="logo">
+        <img src="33admedia.jpeg" alt="33ADMEDIA">
+      </span>
+      <p>Professional CV writing, business branding, and digital services. Helping professionals and businesses succeed.</p>
+      <div style="margin-top:1rem;display:flex;gap:0.75rem">
+        <a href="https://www.linkedin.com/in/isaac-ikiugu-257b9b255/" style="width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.9rem;transition:background 0.2s" onmouseover="this.style.background='rgba(200,150,12,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">in</a>
+        <!-- <a href="#" style="width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.9rem;transition:background 0.2s" onmouseover="this.style.background='rgba(200,150,12,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">ig</a> -->
+        <a href="https://www.facebook.com/33admedia" style="width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.9rem;transition:background 0.2s" onmouseover="this.style.background='rgba(200,150,12,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">fb</a>
+      </div>
+    </div>
+    <div class="footer-col">
+        <h4>CV Services</h4>
+        <ul>
+            <li><a href="#">CV Writing</a></li>
+            <li><a href="#">CV Revamp</a></li>
+            <li><a href="#">Cover Letter</a></li>
+            <li><a href="#">LinkedIn Profile</a></li>
+            <li><a href="#">Executive CV</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>Business Services</h4>
+        <ul>
+            <li><a href="#">Branding</a></li>
+            <li><a href="#">Social Media</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">SEO</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" onclick="openAdmin()">*</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 33AD MEDIAS. All rights reserved.</p>
+    <p>Privacy Policy · Terms of Service</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<div class="float-wa" title="Chat on WhatsApp" onclick="window.open('https://wa.me/254714903643?text=Hi%2033AD%20MEDIAS!%20I%20am%20interested%20in%20your%20services.','_blank')">💬</div>
+
+<!-- CV FORM MODAL -->
+<div class="modal-overlay" id="cvModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>📄 CV Writing Services</h2>
+      <button class="modal-close" onclick="closeModal('cv')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="steps-header" id="cvStepsHeader"></div>
+      <div class="progress-bar"><div class="progress-fill" id="cvProgress" style="width:16.6%"></div></div>
+      <!-- STEP 1 -->
+      <div class="step-content active" id="cvStep1">
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Personal Information</h3>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Full Name *</label><input class="form-input" id="cv_name" placeholder="Your full name"/></div>
+          <div class="form-group"><label class="form-label">Email *</label><input class="form-input" id="cv_email" type="email" placeholder="your@email.com"/></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Phone *</label><input class="form-input" id="cv_phone" placeholder="+254 700 000 000"/></div>
+          <div class="form-group"><label class="form-label">Country *</label><input class="form-input" id="cv_country" placeholder="e.g. Kenya"/></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Current Profession *</label><input class="form-input" id="cv_profession" placeholder="e.g. Software Engineer"/></div>
+          <div class="form-group"><label class="form-label">Years of Experience *</label><select class="form-input" id="cv_exp"><option value="">Select...</option><option>0–1 years</option><option>2–5 years</option><option>6–10 years</option><option>10+ years</option></select></div>
+        </div>
+        <div class="form-group"><label class="form-label">LinkedIn URL (optional)</label><input class="form-input" id="cv_linkedin" placeholder="linkedin.com/in/yourname"/></div>
+        <div class="form-nav"><div></div><button class="btn btn-gold" onclick="cvNext(1)">Next Step →</button></div>
+      </div>
+      <!-- STEP 2 -->
+      <div class="step-content" id="cvStep2">
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Career Information</h3>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Current Job Title *</label><input class="form-input" id="cv_jobtitle" placeholder="e.g. Marketing Manager"/></div>
+          <div class="form-group"><label class="form-label">Industry *</label><input class="form-input" id="cv_industry" placeholder="e.g. Finance, Healthcare..."/></div>
+        </div>
+        <div class="form-group"><label class="form-label">Key Skills *</label><input class="form-input" id="cv_skills" placeholder="e.g. Project Management, Python, Leadership..."/></div>
+        <div class="form-group"><label class="form-label">Career Objective</label><textarea class="form-input" id="cv_objective" placeholder="Brief summary of your career goals..."></textarea></div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Target Job Role *</label><input class="form-input" id="cv_target" placeholder="Role you're applying for"/></div>
+          <div class="form-group"><label class="form-label">Preferred Job Countries</label><input class="form-input" id="cv_countries" placeholder="e.g. UK, Canada, UAE"/></div>
+        </div>
+        <div class="form-nav"><button class="btn btn-outline" onclick="cvBack(2)">← Back</button><button class="btn btn-gold" onclick="cvNext(2)">Next Step →</button></div>
+      </div>
+      <!-- STEP 3 -->
+      <div class="step-content" id="cvStep3">
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Upload Documents</h3>
+        <p style="font-size:0.85rem;color:var(--text2);margin-bottom:1.25rem">Upload your existing documents to help us craft the perfect CV.</p>
+        <div class="upload-zone" id="cvUploadZone" ondragover="handleDrag(event,'cvUploadZone')" ondragleave="handleDragLeave(event,'cvUploadZone')" ondrop="handleDrop(event,'cvFiles')" onclick="document.getElementById('cvFileInput').click()">
+          <div class="upload-icon">📂</div>
+          <p><strong>Click to upload</strong> or drag & drop files here</p>
+          <p style="font-size:0.75rem;margin-top:0.5rem;opacity:0.7">CV/Resume, Photo, Certificates, Job Description (PDF, DOCX, JPG)</p>
+        </div>
+        <input type="file" id="cvFileInput" multiple accept=".pdf,.docx,.doc,.jpg,.jpeg,.png" style="display:none" onchange="addFiles(event,'cvFiles')"/>
+        <div id="cvFilesList" class="file-list"></div>
+        <div class="form-nav"><button class="btn btn-outline" onclick="cvBack(3)">← Back</button><button class="btn btn-gold" onclick="cvNext(3)">Next Step →</button></div>
+      </div>
+      <!-- STEP 4 -->
+      <!-- <div class="step-content" id="cvStep4">
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Select Services</h3>
+        <p style="font-size:0.85rem;color:var(--text2);margin-bottom:1.25rem">Select all services you're interested in (multiple selection allowed).</p>
+        <div class="options-grid" id="cvServiceOptions">
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="Basic CV Writing"/> 📄 Basic CV Writing</label>
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="Premium CV Package"/> ⭐ Premium Package</label>
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="Executive CV"/> 👔 Executive CV</label>
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="Cover Letter"/> ✉️ Cover Letter</label>
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="LinkedIn Optimization"/> 💼 LinkedIn Profile</label>
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="ATS Resume"/> 🤖 ATS Resume</label>
+        </div>
+        <div class="form-nav"><button class="btn btn-outline" onclick="cvBack(4)">← Back</button><button class="btn btn-gold" onclick="cvNext(4)">Next Step →</button></div>
+      </div> -->
+        <div class="step-content" id="cvStep4">
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Select Services</h3>
+        <p style="font-size:0.85rem;color:var(--text2);margin-bottom:1.25rem">Select all services you're interested in (multiple selection allowed).</p>
+        <div class="options-grid" id="cvServiceOptions">
+            <label class="option-card" onclick="toggleCheckbox(this)">
+            <input type="checkbox" value="Basic CV Writing" onchange="updateCheckboxStyle(this)"> 📄 Basic CV Writing
+            </label>
+            <label class="option-card" onclick="toggleCheckbox(this)">
+            <input type="checkbox" value="Premium CV Package" onchange="updateCheckboxStyle(this)"> ⭐ Premium Package
+            </label>
+            <label class="option-card" onclick="toggleCheckbox(this)">
+            <input type="checkbox" value="Executive CV" onchange="updateCheckboxStyle(this)"> 👔 Executive CV
+            </label>
+            <label class="option-card" onclick="toggleCheckbox(this)">
+            <input type="checkbox" value="Cover Letter" onchange="updateCheckboxStyle(this)"> ✉️ Cover Letter
+            </label>
+            <label class="option-card" onclick="toggleCheckbox(this)">
+            <input type="checkbox" value="LinkedIn Optimization" onchange="updateCheckboxStyle(this)"> 💼 LinkedIn Profile
+            </label>
+            <label class="option-card" onclick="toggleCheckbox(this)">
+            <input type="checkbox" value="ATS Resume" onchange="updateCheckboxStyle(this)"> 🤖 ATS Resume
+            </label>
+        </div>
+        <div class="form-nav">
+            <button class="btn btn-outline" onclick="cvBack(4)">← Back</button>
+            <button class="btn btn-gold" onclick="cvNext(4)">Next Step →</button>
+        </div>
+        </div>
+      <!-- STEP 5 -->
+      <div class="step-content" id="cvStep5">
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Payment Preference</h3>
+        <div class="options-grid" style="grid-template-columns:1fr 1fr 1fr" id="cvPayOptions">
+          <label class="option-card" onclick="toggleSingle(this,'cvPayOptions')" style="flex-direction:column;text-align:center;padding:1.25rem"><input type="radio" name="cvPay" value="Pay Now"/> 💳<br><strong style="margin-top:0.5rem;display:block">Pay Now</strong><span style="font-size:0.75rem;color:var(--text3)">Instant confirmation</span></label>
+          <label class="option-card" onclick="toggleSingle(this,'cvPayOptions')" style="flex-direction:column;text-align:center;padding:1.25rem"><input type="radio" name="cvPay" value="Request Consultation"/> 📞<br><strong style="margin-top:0.5rem;display:block">Free Consult</strong><span style="font-size:0.75rem;color:var(--text3)">Speak with an expert</span></label>
+          <label class="option-card" onclick="toggleSingle(this,'cvPayOptions')" style="flex-direction:column;text-align:center;padding:1.25rem"><input type="radio" name="cvPay" value="Pay Later"/> ⏳<br><strong style="margin-top:0.5rem;display:block">Pay Later</strong><span style="font-size:0.75rem;color:var(--text3)">After delivery</span></label>
+        </div>
+        <div class="form-nav"><button class="btn btn-outline" onclick="cvBack(5)">← Back</button><button class="btn btn-gold" onclick="cvNext(5)">Review & Submit →</button></div>
+      </div>
+      <!-- STEP 6 -->
+      <div class="step-content" id="cvStep6">
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Review Your Submission</h3>
+        <div class="summary-card" id="cvSummary"></div>
+        <p style="font-size:0.8rem;color:var(--text3);margin-bottom:1.25rem">✅ By submitting you agree to our terms. We'll contact you within 2 hours.</p>
+        <div class="form-nav"><button class="btn btn-outline" onclick="cvBack(6)">← Edit</button><button class="btn btn-gold" onclick="submitCvForm()">Submit Application</button></div>
+      </div>
+      <!-- SUCCESS -->
+      <div class="step-content" id="cvSuccess">
+        <div class="success-anim">
+          <div class="success-icon">🎉</div>
+          <h3>You're All Set!</h3>
+          <p>
+            Your CV request has been received! We'll reach out via email and WhatsApp within <strong>2 hours</strong> to confirm your order and next steps.
+        </p>
+          <button class="btn btn-gold" style="margin-top:1.5rem" onclick="closeModal('cv')">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BUSINESS FORM MODAL -->
+<div class="modal-overlay" id="bizModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>🚀 Business Services Inquiry</h2>
+      <button class="modal-close" onclick="closeModal('biz')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="progress-bar"><div class="progress-fill" id="bizProgress" style="width:25%"></div></div>
+      <!-- Step 1 -->
+      <div class="step-content active" id="bizStep1">
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Business Information</h3>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Full Name *</label><input class="form-input" id="biz_name" placeholder="Your name"/></div>
+          <div class="form-group"><label class="form-label">Business Name *</label><input class="form-input" id="biz_bizname" placeholder="Company name"/></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Business Email *</label><input class="form-input" id="biz_email" type="email" placeholder="business@email.com"/></div>
+          <div class="form-group"><label class="form-label">Phone *</label><input class="form-input" id="biz_phone" placeholder="+254 700 000 000"/></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Website (optional)</label><input class="form-input" id="biz_website" placeholder="www.yourbusiness.com"/></div>
+          <div class="form-group"><label class="form-label">Industry *</label><input class="form-input" id="biz_industry" placeholder="e.g. Retail, Tech, Healthcare"/></div>
+        </div>
+        <div class="form-group"><label class="form-label">Business Location *</label><input class="form-input" id="biz_location" placeholder="City, Country"/></div>
+        <div class="form-nav"><div></div><button class="btn btn-gold" onclick="bizNext(1)">Next Step →</button></div>
+      </div>
+      <!-- Step 2 -->
+      <!-- <div class="step-content" id="bizStep2">
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Services Required</h3>
+        <p style="font-size:0.85rem;color:var(--text2);margin-bottom:1.25rem">Select all services you're interested in.</p>
+        <div class="options-grid" id="bizServiceOptions">
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="Branding"/> 🎨 Branding</label>
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="Social Media"/> 📱 Social Media</label>
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="Website Dev"/> 🌐 Website Dev</label>
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="Logo Design"/> 🖌️ Logo Design</label>
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="Paid Ads"/> 💰 Paid Ads</label>
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="SEO"/> 🔍 SEO</label>
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="Content Creation"/> ✍️ Content</label>
+          <label class="option-card" onclick="toggleOption(this)"><input type="checkbox" value="Marketing Strategy"/> 📈 Marketing Strategy</label>
+        </div>
+        <div class="form-nav"><button class="btn btn-outline" onclick="bizBack(2)">← Back</button><button class="btn btn-gold" onclick="bizNext(2)">Next Step →</button></div>
+      </div> -->
+    <div class="step-content" id="bizStep2">
+    <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Services Required</h3>
+    <p style="font-size:0.85rem;color:var(--text2);margin-bottom:1.25rem">Select all services you're interested in.</p>
+    <div class="options-grid" id="bizServiceOptions">
+        <label class="option-card" onclick="toggleCheckbox(this)">
+        <input type="checkbox" value="Branding" onchange="updateCheckboxStyle(this)"> 🎨 Branding
+        </label>
+        <label class="option-card" onclick="toggleCheckbox(this)">
+        <input type="checkbox" value="Social Media" onchange="updateCheckboxStyle(this)"> 📱 Social Media
+        </label>
+        <label class="option-card" onclick="toggleCheckbox(this)">
+        <input type="checkbox" value="Website Dev" onchange="updateCheckboxStyle(this)"> 🌐 Website Dev
+        </label>
+        <label class="option-card" onclick="toggleCheckbox(this)">
+        <input type="checkbox" value="Logo Design" onchange="updateCheckboxStyle(this)"> 🖌️ Logo Design
+        </label>
+        <label class="option-card" onclick="toggleCheckbox(this)">
+        <input type="checkbox" value="Paid Ads" onchange="updateCheckboxStyle(this)"> 💰 Paid Ads
+        </label>
+        <label class="option-card" onclick="toggleCheckbox(this)">
+        <input type="checkbox" value="SEO" onchange="updateCheckboxStyle(this)"> 🔍 SEO
+        </label>
+        <label class="option-card" onclick="toggleCheckbox(this)">
+        <input type="checkbox" value="Content Creation" onchange="updateCheckboxStyle(this)"> ✍️ Content
+        </label>
+        <label class="option-card" onclick="toggleCheckbox(this)">
+        <input type="checkbox" value="Marketing Strategy" onchange="updateCheckboxStyle(this)"> 📈 Marketing Strategy
+        </label>
+    </div>
+    <div class="form-nav">
+        <button class="btn btn-outline" onclick="bizBack(2)">← Back</button>
+        <button class="btn btn-gold" onclick="bizNext(2)">Next Step →</button>
+    </div>
+    </div>
+      <!-- Step 3 -->
+      <div class="step-content" id="bizStep3">
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Project Details</h3>
+        <div class="form-group"><label class="form-label">Describe Your Business *</label><textarea class="form-input" id="biz_desc" placeholder="Tell us about your business and what you do..."></textarea></div>
+        <div class="form-group"><label class="form-label">Goals & Objectives *</label><textarea class="form-input" id="biz_goals" placeholder="What do you want to achieve?"></textarea></div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Project Budget *</label>
+            <select class="form-input" id="biz_budget">
+            <option value="">Select range...</option>
+            <option>Under KES 1000</option>
+            <option>KES 5000 – KES 10,000</option>
+            <option>KES 10,000 – KES 15,000</option>
+            <option>KES 15,000 – KES 30,000</option>
+            <option>Above KES 30,000+</option>
+            </select>
+        </div>
+          <div class="form-group"><label class="form-label">Timeline *</label>
+            <select class="form-input" id="biz_timeline">
+                <option value="">Select...</option>
+                <option>ASAP</option>
+                <option>1–2 weeks</option>
+                <option>1 month</option>
+                <option>2–3 months</option>
+                <option>Flexible</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group"><label class="form-label">Preferred Contact Method *</label>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap" id="bizContactOptions">
+            <label class="option-card" onclick="toggleSingle(this,'bizContactOptions')" style="padding:0.6rem 1rem"><input type="radio" name="bizContact" value="WhatsApp"/> 💬 WhatsApp</label>
+            <label class="option-card" onclick="toggleSingle(this,'bizContactOptions')" style="padding:0.6rem 1rem"><input type="radio" name="bizContact" value="Email"/> 📧 Email</label>
+            <label class="option-card" onclick="toggleSingle(this,'bizContactOptions')" style="padding:0.6rem 1rem"><input type="radio" name="bizContact" value="Call"/> 📞 Phone Call</label>
+          </div>
+        </div>
+        <div class="form-nav"><button class="btn btn-outline" onclick="bizBack(3)">← Back</button><button class="btn btn-gold" onclick="bizNext(3)">Next: Upload Files →</button></div>
+      </div>
+      <!-- Step 4 -->
+      <div class="step-content" id="bizStep4">
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Upload Brand Assets (Optional)</h3>
+        <div class="upload-zone" id="bizUploadZone" ondragover="handleDrag(event,'bizUploadZone')" ondragleave="handleDragLeave(event,'bizUploadZone')" ondrop="handleDrop(event,'bizFiles')" onclick="document.getElementById('bizFileInput').click()">
+          <div class="upload-icon">📁</div>
+          <p><strong>Upload your files</strong> — logo, brand assets, company profile, references</p>
+          <p style="font-size:0.75rem;margin-top:0.5rem;opacity:0.7">PDF, DOCX, JPG, PNG, AI, SVG accepted</p>
+        </div>
+        <input type="file" id="bizFileInput" multiple accept=".pdf,.docx,.doc,.jpg,.jpeg,.png,.ai,.svg" style="display:none" onchange="addFiles(event,'bizFiles')"/>
+        <div id="bizFilesList" class="file-list"></div>
+        <p style="font-size:0.8rem;color:var(--text2);margin-top:1rem">Files are optional — you can skip this step if you don't have assets ready yet.</p>
+        <div class="form-nav"><button class="btn btn-outline" onclick="bizBack(4)">← Back</button><button class="btn btn-gold" onclick="submitBizForm()">✦ Submit Inquiry</button></div>
+      </div>
+      <!-- SUCCESS -->
+      <div class="step-content" id="bizSuccess">
+        <div class="success-anim">
+          <div class="success-icon">🚀</div>
+          <h3>Inquiry Received!</h3>
+          <p>Thank you for reaching out! Our business team will review your inquiry and contact you within <strong>4 hours</strong> via your preferred method.</p>
+          <button class="btn btn-gold" style="margin-top:1.5rem" onclick="closeModal('biz')">Close ✦</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN LOGIN -->
+<div class="login-overlay" id="loginOverlay" style="display:none">
+  <div class="login-card" data-theme="dark">
+    <div class="logo" style="font-family:var(--font-display);font-size:1.6rem;font-weight:900;color:#F0EDE6">33AD<span style="color:var(--gold)">MEDIA</span></div>
+    <p style="color:#9A9A9E">Admin Dashboard — Secure Login</p>
+    <div id="loginErr" class="login-err">❌ Invalid credentials.</div>
+    <div class="form-group"><label class="form-label" style="color:#9A9A9E">Username</label><input class="form-input" id="loginUser" placeholder="admin" style="background:#1A1A1E;border-color:rgba(255,255,255,0.1);color:#F0EDE6"/></div>
+    <div class="form-group"><label class="form-label" style="color:#9A9A9E">Password</label><input class="form-input" id="loginPass" type="password" placeholder="password" style="background:#1A1A1E;border-color:rgba(255,255,255,0.1);color:#F0EDE6" onkeydown="if(event.key==='Enter')doLogin()"/></div>
+    <button class="btn btn-gold" style="width:100%;justify-content:center;padding:0.875rem;margin-bottom:1rem" onclick="doLogin()">Login →</button>
+    <button class="btn btn-outline" style="width:100%;justify-content:center;font-size:0.8rem;padding:0.6rem;border-color:rgba(255,255,255,0.1);color:#9A9A9E" onclick="document.getElementById('loginOverlay').style.display='none'">← Back to Site</button>
+    <p style="font-size:0.75rem;color:#6A6A6E;margin-top:1rem;text-align:center">admin / 33admedia2025</p>
+  </div>
+</div>
+
+<!-- ADMIN DASHBOARD -->
+<div class="admin-overlay" id="adminOverlay" style="display:none" data-theme="dark">
+  <div class="admin-nav">
+    <span class="logo">33AD<span style="color:var(--gold)">MEDIA</span> Admin</span>
+    <div style="flex:1"></div>
+    <button class="theme-toggle" onclick="toggleTheme()" style="margin-right:0.75rem">🌙</button>
+    <button class="btn btn-outline" style="font-size:0.8rem;padding:0.4rem 1rem" onclick="closeAdmin()">← Exit Dashboard</button>
+  </div>
+  <div class="admin-body">
+    <div class="admin-sidebar">
+      <div class="sidebar-item active" onclick="showPage('overview')">📊 Overview</div>
+      <div class="sidebar-item" onclick="showPage('cv-leads')">📄 CV Leads</div>
+      <div class="sidebar-item" onclick="showPage('biz-leads')">🚀 Business Leads</div>
+      <div class="sidebar-item" onclick="showPage('all-leads')">👥 All Leads</div>
+      <div style="padding:1.5rem;border-top:1px solid var(--border);margin-top:auto">
+        <p style="font-size:0.75rem;color:var(--text3)">Logged in as<br><strong style="color:var(--gold)">Admin</strong></p>
+      </div>
+    </div>
+    <div class="admin-content">
+      <!-- OVERVIEW -->
+      <div class="admin-page active" id="page-overview">
+        <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:1.5rem">Dashboard Overview</h2>
+        <div class="stats-grid" id="statsGrid"></div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:1rem">Recent Leads</h3>
+        <div class="data-table-wrap"><div style="overflow-x:auto"><table id="recentTable"><thead><tr><th>Name</th><th>Type</th><th>Service</th><th>Date</th><th>Status</th><th>Action</th></tr></thead><tbody></tbody></table></div></div>
+      </div>
+      <!-- CV LEADS -->
+      <div class="admin-page" id="page-cv-leads">
+        <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:1.5rem">CV Leads</h2>
+        <div class="data-table-wrap">
+          <div class="table-toolbar">
+            <input class="search-input" placeholder="🔍 Search leads..." oninput="filterTable(this,'cvTable')"/>
+            <select class="filter-select" onchange="filterByStatus(this,'cvTable')"><option value="">All Statuses</option><option>New</option><option>Contacted</option><option>In Progress</option><option>Converted</option><option>Closed</option></select>
+            <button class="export-btn" onclick="exportCSV('cv')">⬇ Export CSV</button>
+          </div>
+          <div style="overflow-x:auto"><table id="cvTable"><thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Profession</th><th>Services</th><th>Date</th><th>Status</th><th>Action</th></tr></thead><tbody></tbody></table></div>
+        </div>
+      </div>
+      <!-- BIZ LEADS -->
+      <div class="admin-page" id="page-biz-leads">
+        <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:1.5rem">Business Leads</h2>
+        <div class="data-table-wrap">
+          <div class="table-toolbar">
+            <input class="search-input" placeholder="🔍 Search leads..." oninput="filterTable(this,'bizTable')"/>
+            <select class="filter-select" onchange="filterByStatus(this,'bizTable')"><option value="">All Statuses</option><option>New</option><option>Contacted</option><option>In Progress</option><option>Converted</option><option>Closed</option></select>
+            <button class="export-btn" onclick="exportCSV('biz')">⬇ Export CSV</button>
+          </div>
+          <div style="overflow-x:auto"><table id="bizTable"><thead><tr><th>Name</th><th>Business</th><th>Email</th><th>Services</th><th>Budget</th><th>Date</th><th>Status</th><th>Action</th></tr></thead><tbody></tbody></table></div>
+        </div>
+      </div>
+      <!-- ALL LEADS -->
+      <div class="admin-page" id="page-all-leads">
+        <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:1.5rem">All Leads</h2>
+        <div class="data-table-wrap">
+          <div class="table-toolbar">
+            <input class="search-input" placeholder="🔍 Search all leads..." oninput="filterTable(this,'allTable')"/>
+            <select class="filter-select" onchange="filterByStatus(this,'allTable')"><option value="">All Statuses</option><option>New</option><option>Contacted</option><option>In Progress</option><option>Converted</option><option>Closed</option></select>
+            <button class="export-btn" onclick="exportCSV('all')">⬇ Export CSV</button>
+          </div>
+          <div style="overflow-x:auto"><table id="allTable"><thead><tr><th>Name</th><th>Type</th><th>Email</th><th>Service</th><th>Date</th><th>Status</th><th>Action</th></tr></thead><tbody></tbody></table></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LEAD DETAIL MODAL -->
+<div class="modal-overlay" id="detailModal">
+  <div class="modal" style="max-width:560px">
+    <div class="modal-header">
+      <h2 id="detailTitle">Lead Details</h2>
+      <button class="modal-close" onclick="document.getElementById('detailModal').classList.remove('open')">✕</button>
+    </div>
+    <div class="modal-body" id="detailBody"></div>
+  </div>
+</div>
+
+<script>
+// ===== EMAIL CONFIGURATION (using EmailJS integration with a fallback simulation) =====
+// For a real endpoint, replace with your actual SMTP or API. This uses a simulation + console log + mailto fallback demonstration.
+// To actually receive emails in your inbox, you would typically use a backend endpoint (PHP, Node) or a service like EmailJS, Formspree, etc.
+// For simplicity and to ensure emails reach you, we implement a functional email simulation that sends a formatted lead to a specified address.
+// You can replace the email recipient below with your own email address. It will open your default mail client with prefilled data.
+function sendEmailAlert(leadData, type) {
+  // Replace this email with YOUR actual email address where you want to receive form submissions.
+  const YOUR_EMAIL = "mwangivictor770@gmail.com"; // CHANGE THIS TO YOUR REAL EMAIL ADDRESS
+  let subject = `New ${type.toUpperCase()} Lead from ProCraft`;
+  let body = "";
+  for (let key in leadData) {
+    body += `${key}: ${leadData[key]}\n`;
+  }
+  // Simulate sending: open mailto link with prefilled data. This works on any device with an email client.
+  const mailtoLink = `mailto:${YOUR_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  // For demo purposes, also log to console and show a small alert that email is being prepared.
+  console.log("Email data:", leadData);
+  // Automatically open user's default email client so they can send.
+  window.location.href = mailtoLink;
+  // Additionally store in localStorage as fallback
+  const leads = getLeads();
+  const newLead = { ...leadData, id: Date.now(), type: type, date: new Date().toISOString(), status: 'New' };
+  leads.push(newLead);
+  saveLeads(leads);
+  return true;
+}
+
+// Override form submissions to trigger emails
+const originalSubmitCv = submitCvForm;
+window.submitCvForm = function() {
+  const services = [...document.querySelectorAll('#cvServiceOptions .option-card.selected')].map(o=>o.textContent.trim()).join(', ');
+  const leadData = {
+    "Full Name": v('cv_name'),
+    "Email": v('cv_email'),
+    "Phone": v('cv_phone'),
+    "Country": v('cv_country'),
+    "Profession": v('cv_profession'),
+    "Experience": v('cv_exp'),
+    "Job Title": v('cv_jobtitle'),
+    "Industry": v('cv_industry'),
+    "Skills": v('cv_skills'),
+    "Target Role": v('cv_target'),
+    "Services Selected": services,
+    "Payment Preference": document.querySelector('#cvPayOptions .option-card.selected')?.textContent.trim() || 'Not selected'
+  };
+  sendEmailAlert(leadData, 'cv');
+  showCvStep('success');
+};
+
+const originalSubmitBiz = submitBizForm;
+window.submitBizForm = function() {
+  // Validate that at least one service is selected in business form
+  const selectedServices = [...document.querySelectorAll('#bizServiceOptions .option-card.selected')].map(o=>o.textContent.trim());
+  if(selectedServices.length === 0) {
+    alert("❌ Please select at least one business service to continue.");
+    return;
+  }
+  const leadData = {
+    "Full Name": v('biz_name'),
+    "Business Name": v('biz_bizname'),
+    "Business Email": v('biz_email'),
+    "Phone": v('biz_phone'),
+    "Industry": v('biz_industry'),
+    "Location": v('biz_location'),
+    "Services Required": selectedServices.join(', '),
+    "Budget": v('biz_budget'),
+    "Timeline": v('biz_timeline'),
+    "Business Description": v('biz_desc'),
+    "Goals": v('biz_goals'),
+    "Preferred Contact": document.querySelector('#bizContactOptions .option-card.selected')?.textContent.trim() || 'Not specified'
+  };
+  sendEmailAlert(leadData, 'business');
+  showBizStep('success');
+};
+
+// Override contact form to also send email
+window.submitContact = function() {
+  const name = document.getElementById('cName').value.trim();
+  const email = document.getElementById('cEmail').value.trim();
+  const phone = document.getElementById('cPhone').value.trim();
+  const service = document.getElementById('cService').value;
+  const message = document.getElementById('cMessage').value.trim();
+  if(!name || !email) { alert('Please fill in name and email.'); return; }
+  const leadData = {
+    "Name": name,
+    "Email": email,
+    "Phone": phone || "Not provided",
+    "Service Interest": service,
+    "Message": message || "No message"
+  };
+  sendEmailAlert(leadData, 'contact');
+  document.getElementById('contactSuccess').style.display = 'block';
+  document.getElementById('cName').value = '';
+  document.getElementById('cEmail').value = '';
+  document.getElementById('cPhone').value = '';
+  document.getElementById('cService').value = '';
+  document.getElementById('cMessage').value = '';
+  setTimeout(() => { document.getElementById('contactSuccess').style.display = 'none'; }, 5000);
+};
+
+// Also override bizNext validation for Step2 to enforce service selection
+const originalBizNext = bizNext;
+window.bizNext = function(step) {
+  if(step === 2) {
+    const selected = document.querySelectorAll('#bizServiceOptions .option-card.selected').length;
+    if(selected === 0) {
+      alert("Please select at least one business service to continue.");
+      return;
+    }
+  }
+  originalBizNext(step);
+};
+
+// ===== STATE =====
+let theme = 'dark';
+let cvStep = 1;
+let bizStep = 1;
+let cvFiles = [];
+let bizFiles = [];
+let currentDetail = null;
+
+// ===== STORAGE =====
+function getLeads(){try{return JSON.parse(localStorage.getItem('procraft_leads')||'[]')}catch{return[]}}
+function saveLeads(l){localStorage.setItem('procraft_leads',JSON.stringify(l))}
+
+// ===== SEED DATA =====
+function seedData(){
+  const l = getLeads();
+  if(l.length>0)return;
+  const now = Date.now();
+  const day = 86400000;
+  const seed=[
+    {id:1,type:'cv',name:'Samuel Mwangi',email:'samuel@example.com',phone:'+254 712 345 678',profession:'Software Engineer',services:'Premium CV Package, LinkedIn Optimization',date:new Date(now-day).toISOString(),status:'Converted',notes:'Great client. Hired at Safaricom!',target:'Senior Dev',country:'Kenya'},
+    {id:2,type:'cv',name:'Fatima Nkosi',email:'fatima@example.com',phone:'+27 82 123 4567',profession:'HR Manager',services:'Basic CV Writing, Cover Letter',date:new Date(now-2*day).toISOString(),status:'In Progress',notes:'Waiting for final draft approval',target:'HR Director',country:'South Africa'},
+    {id:3,type:'biz',name:'James Kariuki',bizname:'BrandForge Ltd',email:'james@brandforge.com',phone:'+254 722 987 654',services:'Branding, Logo Design, Social Media',budget:'$1,500 – $5,000',date:new Date(now-3*day).toISOString(),status:'Contacted',notes:'Sent proposal on Monday',industry:'Marketing',location:'Nairobi, Kenya'},
+    {id:4,type:'cv',name:'Amara Osei',email:'amara@example.com',phone:'+233 24 567 8901',profession:'Finance Analyst',services:'Executive CV',date:new Date(now-4*day).toISOString(),status:'New',notes:'',target:'CFO',country:'Ghana'},
+    {id:5,type:'biz',name:'David Mutua',bizname:'TechHub Solutions',email:'david@techhub.co.ke',phone:'+254 733 456 789',services:'Website Dev, SEO, Paid Ads',budget:'$5,000 – $15,000',date:new Date(now-5*day).toISOString(),status:'Converted',notes:'Project delivered. Very happy client!',industry:'Technology',location:'Nairobi, Kenya'},
+    {id:6,type:'cv',name:'Chioma Obi',email:'chioma@example.com',phone:'+234 803 765 4321',profession:'Nurse',services:'Basic CV Writing, Cover Letter',date:new Date(now).toISOString(),status:'New',notes:'',target:'Senior Nurse UK',country:'Nigeria'},
+  ];
+  saveLeads(seed);
+}
+seedData();
+
+// ===== THEME =====
+function toggleTheme(){
+  theme = theme==='dark'?'light':'dark';
+  document.body.setAttribute('data-theme',theme);
+  document.getElementById('adminOverlay').setAttribute('data-theme',theme);
+  document.querySelector('.theme-toggle').textContent = theme==='dark'?'🌙':'☀️';
+}
+
+// ===== NAV =====
+function toggleNav(){
+  const m=document.getElementById('mobileNav');
+  m.style.display=m.style.display==='flex'?'none':'flex';
+}
+function toggleCheckbox(labelElement) {
+  const checkbox = labelElement.querySelector('input[type="checkbox"]');
+  if (checkbox) {
+    checkbox.checked = !checkbox.checked;
+    updateCheckboxStyle(checkbox);
+  }
+}
+function updateCheckboxStyle(checkbox) {
+  const label = checkbox.closest('.option-card');
+  if (checkbox.checked) {
+    label.classList.add('selected');
+  } else {
+    label.classList.remove('selected');
+  }
+}
+// ===== MODALS =====
+function openModal(type){
+  if(type==='cv'){document.getElementById('cvModal').classList.add('open');cvStep=1;showCvStep(1)}
+  else{document.getElementById('bizModal').classList.add('open');bizStep=1;showBizStep(1)}
+}
+function closeModal(type){
+  document.getElementById(type==='cv'?'cvModal':'bizModal').classList.remove('open');
+}
+document.getElementById('cvModal').addEventListener('click',function(e){if(e.target===this)closeModal('cv')});
+document.getElementById('bizModal').addEventListener('click',function(e){if(e.target===this)closeModal('biz')});
+
+// ===== CV STEPS =====
+function showCvStep(n){
+  document.querySelectorAll('[id^="cvStep"],[id="cvSuccess"]').forEach(el=>el.classList.remove('active'));
+  const el = document.getElementById(n==='success'?'cvSuccess':'cvStep'+n);
+  if(el)el.classList.add('active');
+  const total=6;
+  const pct = n==='success'?100:Math.round(((n-1)/total)*100+16.6);
+  document.getElementById('cvProgress').style.width=pct+'%';
+  buildCvStepsHeader(n);
+}
+function buildCvStepsHeader(current){
+  const labels=['Personal','Career','Documents','Services','Payment','Review'];
+  const h=document.getElementById('cvStepsHeader');
+  h.innerHTML='';
+  labels.forEach((l,i)=>{
+    const n=i+1;
+    const div=document.createElement('div');div.className='step-item';
+    const c=document.createElement('div');c.className='step-circle';
+    if(current==='success'||n<(current==='success'?7:current))c.className='step-circle done',c.textContent='✓';
+    else if(n==current)c.className='step-circle active',c.textContent=n;
+    else c.textContent=n;
+    div.appendChild(c);
+    if(i<labels.length-1){const line=document.createElement('div');line.className='step-line'+(n<current?' done':'');div.appendChild(line)}
+    h.appendChild(div);
+  });
+}
+function cvNext(step){
+  if(step===1){
+    if(!validateFields(['cv_name','cv_email','cv_phone','cv_country','cv_profession','cv_exp']))return;
+  }else if(step===2){
+    if(!validateFields(['cv_jobtitle','cv_industry','cv_skills','cv_target']))return;
+  }else if(step===4){
+    const sel=document.querySelectorAll('#cvServiceOptions .option-card.selected');
+    if(!sel.length){alert('Please select at least one service.');return}
+  }else if(step===5){
+    const sel=document.querySelector('#cvPayOptions .option-card.selected');
+    if(!sel){alert('Please select a payment option.');return}
+    buildCvSummary();
+    showCvStep(6);return;
+  }else if(step===6){return}
+  showCvStep(step+1);
+}
+function cvBack(step){showCvStep(step-1)}
+function buildCvSummary(){
+  const services=[...document.querySelectorAll('#cvServiceOptions .option-card.selected')].map(o=>o.textContent.trim()).join(', ');
+  const pay=document.querySelector('#cvPayOptions .option-card.selected')?.textContent.trim()||'Not selected';
+  document.getElementById('cvSummary').innerHTML=`
+    <div class="summary-row"><span class="label">Name</span><span class="value">${v('cv_name')}</span></div>
+    <div class="summary-row"><span class="label">Email</span><span class="value">${v('cv_email')}</span></div>
+    <div class="summary-row"><span class="label">Phone</span><span class="value">${v('cv_phone')}</span></div>
+    <div class="summary-row"><span class="label">Country</span><span class="value">${v('cv_country')}</span></div>
+    <div class="summary-row"><span class="label">Profession</span><span class="value">${v('cv_profession')}</span></div>
+    <div class="summary-row"><span class="label">Experience</span><span class="value">${v('cv_exp')}</span></div>
+    <div class="summary-row"><span class="label">Target Role</span><span class="value">${v('cv_target')}</span></div>
+    <div class="summary-row"><span class="label">Services</span><span class="value">${services}</span></div>
+    <div class="summary-row"><span class="label">Payment</span><span class="value">${pay}</span></div>
+    <div class="summary-row"><span class="label">Files</span><span class="value">${cvFiles.length} file(s)</span></div>
+  `;
+}
+function submitCvForm(){
+  const services=[...document.querySelectorAll('#cvServiceOptions .option-card.selected')].map(o=>o.textContent.trim()).join(', ');
+  const lead={id:Date.now(),type:'cv',name:v('cv_name'),email:v('cv_email'),phone:v('cv_phone'),country:v('cv_country'),profession:v('cv_profession'),exp:v('cv_exp'),jobtitle:v('cv_jobtitle'),industry:v('cv_industry'),skills:v('cv_skills'),target:v('cv_target'),services,date:new Date().toISOString(),status:'New',notes:''};
+  const leads=getLeads();leads.push(lead);saveLeads(leads);
+  showCvStep('success');
+}
+
+// ===== BIZ STEPS =====
+function showBizStep(n){
+  document.querySelectorAll('[id^="bizStep"],[id="bizSuccess"]').forEach(el=>el.classList.remove('active'));
+  const el=document.getElementById(n==='success'?'bizSuccess':'bizStep'+n);
+  if(el)el.classList.add('active');
+  const pcts=[25,50,75,100];
+  document.getElementById('bizProgress').style.width=(typeof n==='number'?pcts[n-1]:100)+'%';
+}
+function bizNext(step){
+  if(step===1){
+    if(!validateFields(['biz_name','biz_bizname','biz_email','biz_phone','biz_industry','biz_location']))return;
+  }else if(step===2){
+    const sel=document.querySelectorAll('#bizServiceOptions .option-card.selected');
+    if(!sel.length){alert('Please select at least one service.');return}
+  }else if(step===3){
+    if(!validateFields(['biz_desc','biz_goals','biz_budget','biz_timeline']))return;
+  }
+  showBizStep(step+1);
+}
+function bizBack(step){showBizStep(step-1)}
+function submitBizForm(){
+  const services=[...document.querySelectorAll('#bizServiceOptions .option-card.selected')].map(o=>o.textContent.trim()).join(', ');
+  const lead={id:Date.now(),type:'biz',name:v('biz_name'),bizname:v('biz_bizname'),email:v('biz_email'),phone:v('biz_phone'),industry:v('biz_industry'),location:v('biz_location'),services,budget:v('biz_budget'),timeline:v('biz_timeline'),desc:v('biz_desc'),goals:v('biz_goals'),date:new Date().toISOString(),status:'New',notes:''};
+  const leads=getLeads();leads.push(lead);saveLeads(leads);
+  showBizStep('success');
+}
+
+// ===== HELPERS =====
+function v(id){const el=document.getElementById(id);return el?el.value.trim():''}
+function validateFields(ids){
+  let ok=true;
+  ids.forEach(id=>{
+    const el=document.getElementById(id);
+    if(!el)return;
+    if(!el.value.trim()){el.style.borderColor='var(--red)';el.style.boxShadow='0 0 0 3px rgba(192,57,43,0.1)';ok=false}
+    else{el.style.borderColor='';el.style.boxShadow=''}
+  });
+  if(!ok)alert('Please fill in all required fields.');
+  return ok;
+}
+function toggleOption(card){card.classList.toggle('selected')}
+function toggleSingle(card,containerId){
+  document.querySelectorAll('#'+containerId+' .option-card').forEach(c=>c.classList.remove('selected'));
+  card.classList.add('selected');
+}
+function toggleFaq(el){
+  const item=el.parentElement;
+  item.classList.toggle('open');
+}
+function switchTab(tab){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById('tab-cv').style.display=tab==='cv'?'grid':'none';
+  document.getElementById('tab-biz').style.display=tab==='biz'?'grid':'none';
+}
+
+// ===== FILE UPLOAD =====
+function handleDrag(e,zoneId){e.preventDefault();document.getElementById(zoneId).classList.add('dragover')}
+function handleDragLeave(e,zoneId){document.getElementById(zoneId).classList.remove('dragover')}
+function handleDrop(e,store){e.preventDefault();const files=[...e.dataTransfer.files];addFilesToStore(files,store)}
+function addFiles(e,store){addFilesToStore([...e.target.files],store)}
+function addFilesToStore(files,store){
+  const arr=store==='cvFiles'?cvFiles:bizFiles;
+  const listId=store==='cvFiles'?'cvFilesList':'bizFilesList';
+  files.forEach(f=>{if(!arr.find(x=>x.name===f.name))arr.push(f)});
+  renderFiles(arr,listId,store);
+}
+function removeFile(name,store){
+  const arr=store==='cvFiles'?cvFiles:bizFiles;
+  const listId=store==='cvFiles'?'cvFilesList':'bizFilesList';
+  const idx=arr.findIndex(f=>f.name===name);
+  if(idx>-1)arr.splice(idx,1);
+  renderFiles(arr,listId,store);
+}
+function renderFiles(arr,listId,store){
+  const icons={'pdf':'📄','doc':'📝','docx':'📝','jpg':'🖼️','jpeg':'🖼️','png':'🖼️','ai':'🎨','svg':'🎨'};
+  document.getElementById(listId).innerHTML=arr.map(f=>{
+    const ext=(f.name.split('.').pop()||'').toLowerCase();
+    return`<div class="file-item"><span class="file-icon">${icons[ext]||'📎'}</span><span class="file-name">${f.name}</span><span class="file-remove" onclick="removeFile('${f.name}','${store}')">✕</span></div>`;
+  }).join('');
+}
+
+// ===== TESTIMONIALS =====
+let testimPos=0;
+function slideTestim(dir){
+  const track=document.getElementById('testimTrack');
+  const cards=track.querySelectorAll('.testimonial-card');
+  const maxPos=cards.length-0;
+  testimPos=Math.max(0,Math.min(maxPos,testimPos+dir));
+  track.style.transform=`translateX(-${testimPos*356}px)`;
+}
+
+// ===== CONTACT =====
+function submitContact(){
+  const name=document.getElementById('cName').value.trim();
+  const email=document.getElementById('cEmail').value.trim();
+  if(!name||!email){alert('Please fill in name and email.');return}
+  document.getElementById('contactSuccess').style.display='block';
+  document.getElementById('cName').value='';
+  document.getElementById('cEmail').value='';
+  document.getElementById('cPhone').value='';
+  document.getElementById('cService').value='';
+  document.getElementById('cMessage').value='';
+}
+
+// ===== COUNTERS =====
+function animateCounter(el){
+  const target=parseInt(el.dataset.count);
+  const dur=2000;const step=dur/60;
+  let current=0;
+  const inc=target/60;
+  const interval=setInterval(()=>{
+    current+=inc;
+    if(current>=target){el.textContent=target.toLocaleString();clearInterval(interval)}
+    else el.textContent=Math.floor(current).toLocaleString();
+  },step);
+}
+const counterObserver=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){animateCounter(e.target);counterObserver.unobserve(e.target)}});
+},{threshold:0.5});
+document.querySelectorAll('[data-count]').forEach(el=>counterObserver.observe(el));
+
+// ===== REVEAL ON SCROLL =====
+const revealObserver=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+
+// ===== ADMIN =====
+function openAdmin(){document.getElementById('loginOverlay').style.display='flex'}
+function doLogin(){
+  const u=document.getElementById('loginUser').value.trim();
+  const p=document.getElementById('loginPass').value.trim();
+  if(u==='admin'&&p==='33admedia2025'){
+    document.getElementById('loginOverlay').style.display='none';
+    document.getElementById('adminOverlay').style.display='flex';
+    loadAdminData();
+  }else{
+    document.getElementById('loginErr').style.display='block';
+  }
+}
+function closeAdmin(){document.getElementById('adminOverlay').style.display='none'}
+function showPage(page){
+  document.querySelectorAll('.admin-page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.sidebar-item').forEach(s=>s.classList.remove('active'));
+  document.getElementById('page-'+page).classList.add('active');
+  event.target.classList.add('active');
+  loadAdminData();
+}
+function loadAdminData(){
+  const leads=getLeads();
+  const cvLeads=leads.filter(l=>l.type==='cv');
+  const bizLeads=leads.filter(l=>l.type==='biz');
+  // Stats
+  const sg=document.getElementById('statsGrid');
+  if(sg){sg.innerHTML=`
+    <div class="stat-card"><span class="stat-num">${leads.length}</span><div class="stat-label">Total Leads</div></div>
+    <div class="stat-card"><span class="stat-num">${cvLeads.length}</span><div class="stat-label">CV Leads</div></div>
+    <div class="stat-card"><span class="stat-num">${bizLeads.length}</span><div class="stat-label">Business Leads</div></div>
+    <div class="stat-card"><span class="stat-num">${leads.filter(l=>l.status==='New').length}</span><div class="stat-label">New (Uncontacted)</div></div>
+    <div class="stat-card"><span class="stat-num">${leads.filter(l=>l.status==='Converted').length}</span><div class="stat-label">Converted</div></div>
+    <div class="stat-card"><span class="stat-num">${Math.round((leads.filter(l=>l.status==='Converted').length/leads.length)*100)||0}%</span><div class="stat-label">Conversion Rate</div></div>
+  `}
+  // Recent
+  const rt=document.querySelector('#recentTable tbody');
+  if(rt){const recent=[...leads].sort((a,b)=>new Date(b.date)-new Date(a.date)).slice(0,5);rt.innerHTML=recent.map(l=>rowRecent(l)).join('')}
+  // CV table
+  const ct=document.querySelector('#cvTable tbody');
+  if(ct){ct.innerHTML=cvLeads.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(l=>`
+    <tr><td><strong>${esc(l.name)}</strong></td><td>${esc(l.email)}</td><td>${esc(l.phone)}</td><td>${esc(l.profession)}</td><td><span class="tag">${esc((l.services||'').split(',')[0])}</span></td><td>${fmtDate(l.date)}</td><td><span class="status-badge status-${l.status.toLowerCase().replace(' ','-')}">${l.status}</span></td><td><button class="action-btn action-view" onclick="viewLead(${l.id})">View</button></td></tr>
+  `).join('')}
+  // Biz table
+  const bt=document.querySelector('#bizTable tbody');
+  if(bt){bt.innerHTML=bizLeads.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(l=>`
+    <tr><td><strong>${esc(l.name)}</strong></td><td>${esc(l.bizname)}</td><td>${esc(l.email)}</td><td><span class="tag">${esc((l.services||'').split(',')[0])}</span></td><td>${esc(l.budget)}</td><td>${fmtDate(l.date)}</td><td><span class="status-badge status-${l.status.toLowerCase().replace(' ','-')}">${l.status}</span></td><td><button class="action-btn action-view" onclick="viewLead(${l.id})">View</button></td></tr>
+  `).join('')}
+  // All table
+  const at=document.querySelector('#allTable tbody');
+  if(at){at.innerHTML=leads.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(l=>`
+    <tr><td><strong>${esc(l.name)}</strong></td><td><span class="tag">${l.type==='cv'?'CV':'Business'}</span></td><td>${esc(l.email)}</td><td>${esc((l.services||'').split(',')[0])}</td><td>${fmtDate(l.date)}</td><td><span class="status-badge status-${l.status.toLowerCase().replace(' ','-')}">${l.status}</span></td><td><button class="action-btn action-view" onclick="viewLead(${l.id})">View</button></td></tr>
+  `).join('')}
+}
+function rowRecent(l){return`<tr><td><strong>${esc(l.name)}</strong></td><td><span class="tag">${l.type==='cv'?'CV':'Business'}</span></td><td>${esc((l.services||'').split(',')[0])}</td><td>${fmtDate(l.date)}</td><td><span class="status-badge status-${l.status.toLowerCase().replace(' ','-')}">${l.status}</span></td><td><button class="action-btn action-view" onclick="viewLead(${l.id})">View</button></td></tr>`}
+function fmtDate(d){return new Date(d).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}
+function esc(s){return(s||'').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function viewLead(id){
+  const lead=getLeads().find(l=>l.id===id);
+  if(!lead)return;
+  currentDetail=lead;
+  document.getElementById('detailTitle').textContent=(lead.type==='cv'?'📄 CV Lead: ':'🚀 Business Lead: ')+lead.name;
+  const statusColors={New:'status-new',Contacted:'status-contacted','In Progress':'status-progress',Converted:'status-converted',Closed:'status-closed'};
+  const body=document.getElementById('detailBody');
+  body.innerHTML=`
+    <div class="detail-section">
+      <h4>Contact Information</h4>
+      <div class="detail-row"><span class="dk">Full Name</span><span class="dv">${esc(lead.name)}</span></div>
+      <div class="detail-row"><span class="dk">Email</span><span class="dv"><a href="mailto:${esc(lead.email)}" style="color:var(--gold)">${esc(lead.email)}</a></span></div>
+      <div class="detail-row"><span class="dk">Phone</span><span class="dv"><a href="tel:${esc(lead.phone)}" style="color:var(--gold)">${esc(lead.phone)}</a></span></div>
+      ${lead.country?`<div class="detail-row"><span class="dk">Country</span><span class="dv">${esc(lead.country)}</span></div>`:''}
+      ${lead.bizname?`<div class="detail-row"><span class="dk">Business</span><span class="dv">${esc(lead.bizname)}</span></div>`:''}
+      ${lead.industry?`<div class="detail-row"><span class="dk">Industry</span><span class="dv">${esc(lead.industry)}</span></div>`:''}
+      ${lead.location?`<div class="detail-row"><span class="dk">Location</span><span class="dv">${esc(lead.location)}</span></div>`:''}
+    </div>
+    ${lead.profession||lead.target?`<div class="detail-section"><h4>Career Details</h4>
+      ${lead.profession?`<div class="detail-row"><span class="dk">Profession</span><span class="dv">${esc(lead.profession)}</span></div>`:''}
+      ${lead.jobtitle?`<div class="detail-row"><span class="dk">Job Title</span><span class="dv">${esc(lead.jobtitle)}</span></div>`:''}
+      ${lead.skills?`<div class="detail-row"><span class="dk">Skills</span><span class="dv">${esc(lead.skills)}</span></div>`:''}
+      ${lead.target?`<div class="detail-row"><span class="dk">Target Role</span><span class="dv">${esc(lead.target)}</span></div>`:''}
+    </div>`:''}
+    <div class="detail-section">
+      <h4>Project / Service</h4>
+      <div class="detail-row"><span class="dk">Services</span><span class="dv">${esc(lead.services)}</span></div>
+      ${lead.budget?`<div class="detail-row"><span class="dk">Budget</span><span class="dv">${esc(lead.budget)}</span></div>`:''}
+      ${lead.timeline?`<div class="detail-row"><span class="dk">Timeline</span><span class="dv">${esc(lead.timeline)}</span></div>`:''}
+      <div class="detail-row"><span class="dk">Submitted</span><span class="dv">${fmtDate(lead.date)}</span></div>
+    </div>
+    <div class="detail-section">
+      <h4>CRM Management</h4>
+      <div style="margin-bottom:1rem">
+        <label class="form-label" style="font-size:0.75rem">Lead Status</label>
+        <select class="status-select" id="detailStatus" onchange="updateLeadStatus(${lead.id},this.value)">
+          <option${lead.status==='New'?' selected':''}>New</option>
+          <option${lead.status==='Contacted'?' selected':''}>Contacted</option>
+          <option${lead.status==='In Progress'?' selected':''}>In Progress</option>
+          <option${lead.status==='Converted'?' selected':''}>Converted</option>
+          <option${lead.status==='Closed'?' selected':''}>Closed</option>
+        </select>
+      </div>
+      <label class="form-label" style="font-size:0.75rem">Notes</label>
+      <textarea class="notes-area" id="detailNotes" placeholder="Add notes about this lead...">${esc(lead.notes||'')}</textarea>
+      <div style="display:flex;gap:0.75rem;flex-wrap:wrap">
+        <button class="btn btn-gold" style="font-size:0.8rem;padding:0.5rem 1rem" onclick="saveNotes(${lead.id})">💾 Save Notes</button>
+        <a href="mailto:${esc(lead.email)}" class="btn btn-outline" style="font-size:0.8rem;padding:0.5rem 1rem">📧 Email</a>
+        <a href="https://wa.me/${lead.phone.replace(/\D/g,'')}" target="_blank" class="btn btn-outline" style="font-size:0.8rem;padding:0.5rem 1rem;border-color:rgba(37,211,102,0.3);color:#25D366">💬 WhatsApp</a>
+      </div>
+    </div>
+  `;
+  document.getElementById('detailModal').classList.add('open');
+}
+function updateLeadStatus(id,status){
+  const leads=getLeads();const l=leads.find(x=>x.id===id);
+  if(l){l.status=status;saveLeads(leads);loadAdminData()}
+}
+function saveNotes(id){
+  const notes=document.getElementById('detailNotes').value;
+  const leads=getLeads();const l=leads.find(x=>x.id===id);
+  if(l){l.notes=notes;saveLeads(leads);alert('Notes saved!')}
+}
+document.getElementById('detailModal').addEventListener('click',function(e){if(e.target===this)this.classList.remove('open')});
+
+// ===== FILTER / SEARCH =====
+function filterTable(input,tableId){
+  const q=input.value.toLowerCase();
+  document.querySelectorAll('#'+tableId+' tbody tr').forEach(tr=>{
+    tr.style.display=tr.textContent.toLowerCase().includes(q)?'':'none';
+  });
+}
+function filterByStatus(sel,tableId){
+  const q=sel.value.toLowerCase();
+  document.querySelectorAll('#'+tableId+' tbody tr').forEach(tr=>{
+    tr.style.display=!q||tr.textContent.toLowerCase().includes(q)?'':'none';
+  });
+}
+
+// ===== EXPORT =====
+function exportCSV(type){
+  const leads=getLeads().filter(l=>type==='all'||l.type===type.replace('-leads',''));
+  if(!leads.length){alert('No leads to export.');return}
+  const keys=['id','type','name','email','phone','services','status','date'];
+  const rows=[keys.join(','),...leads.map(l=>keys.map(k=>'"'+(l[k]||'').toString().replace(/"/g,'""')+'"').join(','))];
+  const blob=new Blob([rows.join('\n')],{type:'text/csv'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='procraft_leads_'+type+'.csv';a.click();
+}
+
+// ===== HERO ANIMATION =====
+window.addEventListener('load',()=>{
+  document.querySelectorAll('.hero > *:not(.hero-bg),.hero *').forEach((el,i)=>{
+    el.style.animation=`fadeIn 0.6s ease ${i*0.08}s both`;
+  });
+});
+</script>
+</body>
+</html>
