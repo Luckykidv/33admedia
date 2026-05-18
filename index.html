@@ -498,13 +498,13 @@
         </div>
         <div class="form-row">
           <div class="form-group"><label class="form-label">Phone *</label><input class="form-input" id="cv_phone" placeholder="+254 700 000 000"/></div>
-          <div class="form-group"><label class="form-label">Country *</label><input class="form-input" id="cv_country" placeholder="e.g. Kenya"/></div>
+          <!-- <div class="form-group"><label class="form-label">Country *</label><input class="form-input" id="cv_country" placeholder="e.g. Kenya"/></div> -->
         </div>
         <div class="form-row">
           <div class="form-group"><label class="form-label">Current Profession *</label><input class="form-input" id="cv_profession" placeholder="e.g. Software Engineer"/></div>
           <div class="form-group"><label class="form-label">Years of Experience *</label><select class="form-input" id="cv_exp"><option value="">Select...</option><option>0–1 years</option><option>2–5 years</option><option>6–10 years</option><option>10+ years</option></select></div>
         </div>
-        <div class="form-group"><label class="form-label">LinkedIn URL (optional)</label><input class="form-input" id="cv_linkedin" placeholder="linkedin.com/in/yourname"/></div>
+        <!-- <div class="form-group"><label class="form-label">LinkedIn URL (optional)</label><input class="form-input" id="cv_linkedin" placeholder="linkedin.com/in/yourname"/></div> -->
         <div class="form-nav"><div></div><button class="btn btn-gold" onclick="cvNext(1)">Next Step →</button></div>
       </div>
       <!-- STEP 2 -->
@@ -518,13 +518,13 @@
         <div class="form-group"><label class="form-label">Career Objective</label><textarea class="form-input" id="cv_objective" placeholder="Brief summary of your career goals..."></textarea></div>
         <div class="form-row">
           <div class="form-group"><label class="form-label">Target Job Role *</label><input class="form-input" id="cv_target" placeholder="Role you're applying for"/></div>
-          <div class="form-group"><label class="form-label">Preferred Job Countries</label><input class="form-input" id="cv_countries" placeholder="e.g. UK, Canada, UAE"/></div>
+          <!-- <div class="form-group"><label class="form-label">Preferred Job Countries</label><input class="form-input" id="cv_countries" placeholder="e.g. UK, Canada, UAE"/></div> -->
         </div>
         <div class="form-nav"><button class="btn btn-outline" onclick="cvBack(2)">← Back</button><button class="btn btn-gold" onclick="cvNext(2)">Next Step →</button></div>
       </div>
       <!-- STEP 3 -->
       <div class="step-content" id="cvStep3">
-        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Upload Documents</h3>
+        <!-- <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Upload Documents</h3>
         <p style="font-size:0.85rem;color:var(--text2);margin-bottom:1.25rem">Upload your existing documents to help us craft the perfect CV.</p>
         <div class="upload-zone" id="cvUploadZone" ondragover="handleDrag(event,'cvUploadZone')" ondragleave="handleDragLeave(event,'cvUploadZone')" ondrop="handleDrop(event,'cvFiles')" onclick="document.getElementById('cvFileInput').click()">
           <div class="upload-icon">📂</div>
@@ -532,7 +532,7 @@
           <p style="font-size:0.75rem;margin-top:0.5rem;opacity:0.7">CV/Resume, Photo, Certificates, Job Description (PDF, DOCX, JPG)</p>
         </div>
         <input type="file" id="cvFileInput" multiple accept=".pdf,.docx,.doc,.jpg,.jpeg,.png" style="display:none" onchange="addFiles(event,'cvFiles')"/>
-        <div id="cvFilesList" class="file-list"></div>
+        <div id="cvFilesList" class="file-list"></div> -->
         <div class="form-nav"><button class="btn btn-outline" onclick="cvBack(3)">← Back</button><button class="btn btn-gold" onclick="cvNext(3)">Next Step →</button></div>
       </div>
       <!-- STEP 4 -->
@@ -592,7 +592,7 @@
         <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Review Your Submission</h3>
         <div class="summary-card" id="cvSummary"></div>
         <p style="font-size:0.8rem;color:var(--text3);margin-bottom:1.25rem">✅ By submitting you agree to our terms. We'll contact you within 2 hours.</p>
-        <div class="form-nav"><button class="btn btn-outline" onclick="cvBack(6)">← Edit</button><button class="btn btn-gold" onclick="submitCvForm()">Submit Application</button></div>
+        <div class="form-nav"><button class="btn btn-outline" onclick="cvBack(6)">← Edit</button><button class="btn btn-gold" onclick="submitCvForm()">Attach Documents</button></div>
       </div>
       <!-- SUCCESS -->
       <div class="step-content" id="cvSuccess">
@@ -724,16 +724,16 @@
       </div>
       <!-- Step 4 -->
       <div class="step-content" id="bizStep4">
-        <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Upload Brand Assets (Optional)</h3>
+        <!-- <h3 style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:1.25rem">Upload Brand Assets (Optional)</h3>
         <div class="upload-zone" id="bizUploadZone" ondragover="handleDrag(event,'bizUploadZone')" ondragleave="handleDragLeave(event,'bizUploadZone')" ondrop="handleDrop(event,'bizFiles')" onclick="document.getElementById('bizFileInput').click()">
           <div class="upload-icon">📁</div>
           <p><strong>Upload your files</strong> — logo, brand assets, company profile, references</p>
           <p style="font-size:0.75rem;margin-top:0.5rem;opacity:0.7">PDF, DOCX, JPG, PNG, AI, SVG accepted</p>
         </div>
         <input type="file" id="bizFileInput" multiple accept=".pdf,.docx,.doc,.jpg,.jpeg,.png,.ai,.svg" style="display:none" onchange="addFiles(event,'bizFiles')"/>
-        <div id="bizFilesList" class="file-list"></div>
+        <div id="bizFilesList" class="file-list"></div> -->
         <p style="font-size:0.8rem;color:var(--text2);margin-top:1rem">Files are optional — you can skip this step if you don't have assets ready yet.</p>
-        <div class="form-nav"><button class="btn btn-outline" onclick="bizBack(4)">← Back</button><button class="btn btn-gold" onclick="submitBizForm()">✦ Submit Inquiry</button></div>
+        <div class="form-nav"><button class="btn btn-outline" onclick="bizBack(4)">← Back</button><button class="btn btn-gold" onclick="submitBizForm()">Attach Documents and Send</button></div>
       </div>
       <!-- SUCCESS -->
       <div class="step-content" id="bizSuccess">
@@ -741,103 +741,14 @@
           <div class="success-icon">🚀</div>
           <h3>Inquiry Received!</h3>
           <p>Thank you for reaching out! Our business team will review your inquiry and contact you within <strong>4 hours</strong> via your preferred method.</p>
-          <button class="btn btn-gold" style="margin-top:1.5rem" onclick="closeModal('biz')">Close ✦</button>
+          <button class="btn btn-gold" style="margin-top:1.5rem" onclick="closeModal('biz')">Close </button>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ADMIN LOGIN -->
-<div class="login-overlay" id="loginOverlay" style="display:none">
-  <div class="login-card" data-theme="dark">
-    <div class="logo" style="font-family:var(--font-display);font-size:1.6rem;font-weight:900;color:#F0EDE6">33AD<span style="color:var(--gold)">MEDIA</span></div>
-    <p style="color:#9A9A9E">Admin Dashboard — Secure Login</p>
-    <div id="loginErr" class="login-err">❌ Invalid credentials.</div>
-    <div class="form-group"><label class="form-label" style="color:#9A9A9E">Username</label><input class="form-input" id="loginUser" placeholder="admin" style="background:#1A1A1E;border-color:rgba(255,255,255,0.1);color:#F0EDE6"/></div>
-    <div class="form-group"><label class="form-label" style="color:#9A9A9E">Password</label><input class="form-input" id="loginPass" type="password" placeholder="password" style="background:#1A1A1E;border-color:rgba(255,255,255,0.1);color:#F0EDE6" onkeydown="if(event.key==='Enter')doLogin()"/></div>
-    <button class="btn btn-gold" style="width:100%;justify-content:center;padding:0.875rem;margin-bottom:1rem" onclick="doLogin()">Login →</button>
-    <button class="btn btn-outline" style="width:100%;justify-content:center;font-size:0.8rem;padding:0.6rem;border-color:rgba(255,255,255,0.1);color:#9A9A9E" onclick="document.getElementById('loginOverlay').style.display='none'">← Back to Site</button>
-    <p style="font-size:0.75rem;color:#6A6A6E;margin-top:1rem;text-align:center">admin / 33admedia2025</p>
-  </div>
-</div>
 
-<!-- ADMIN DASHBOARD -->
-<div class="admin-overlay" id="adminOverlay" style="display:none" data-theme="dark">
-  <div class="admin-nav">
-    <span class="logo">33AD<span style="color:var(--gold)">MEDIA</span> Admin</span>
-    <div style="flex:1"></div>
-    <button class="theme-toggle" onclick="toggleTheme()" style="margin-right:0.75rem">🌙</button>
-    <button class="btn btn-outline" style="font-size:0.8rem;padding:0.4rem 1rem" onclick="closeAdmin()">← Exit Dashboard</button>
-  </div>
-  <div class="admin-body">
-    <div class="admin-sidebar">
-      <div class="sidebar-item active" onclick="showPage('overview')">📊 Overview</div>
-      <div class="sidebar-item" onclick="showPage('cv-leads')">📄 CV Leads</div>
-      <div class="sidebar-item" onclick="showPage('biz-leads')">🚀 Business Leads</div>
-      <div class="sidebar-item" onclick="showPage('all-leads')">👥 All Leads</div>
-      <div style="padding:1.5rem;border-top:1px solid var(--border);margin-top:auto">
-        <p style="font-size:0.75rem;color:var(--text3)">Logged in as<br><strong style="color:var(--gold)">Admin</strong></p>
-      </div>
-    </div>
-    <div class="admin-content">
-      <!-- OVERVIEW -->
-      <div class="admin-page active" id="page-overview">
-        <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:1.5rem">Dashboard Overview</h2>
-        <div class="stats-grid" id="statsGrid"></div>
-        <h3 style="font-size:1rem;font-weight:700;margin-bottom:1rem">Recent Leads</h3>
-        <div class="data-table-wrap"><div style="overflow-x:auto"><table id="recentTable"><thead><tr><th>Name</th><th>Type</th><th>Service</th><th>Date</th><th>Status</th><th>Action</th></tr></thead><tbody></tbody></table></div></div>
-      </div>
-      <!-- CV LEADS -->
-      <div class="admin-page" id="page-cv-leads">
-        <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:1.5rem">CV Leads</h2>
-        <div class="data-table-wrap">
-          <div class="table-toolbar">
-            <input class="search-input" placeholder="🔍 Search leads..." oninput="filterTable(this,'cvTable')"/>
-            <select class="filter-select" onchange="filterByStatus(this,'cvTable')"><option value="">All Statuses</option><option>New</option><option>Contacted</option><option>In Progress</option><option>Converted</option><option>Closed</option></select>
-            <button class="export-btn" onclick="exportCSV('cv')">⬇ Export CSV</button>
-          </div>
-          <div style="overflow-x:auto"><table id="cvTable"><thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Profession</th><th>Services</th><th>Date</th><th>Status</th><th>Action</th></tr></thead><tbody></tbody></table></div>
-        </div>
-      </div>
-      <!-- BIZ LEADS -->
-      <div class="admin-page" id="page-biz-leads">
-        <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:1.5rem">Business Leads</h2>
-        <div class="data-table-wrap">
-          <div class="table-toolbar">
-            <input class="search-input" placeholder="🔍 Search leads..." oninput="filterTable(this,'bizTable')"/>
-            <select class="filter-select" onchange="filterByStatus(this,'bizTable')"><option value="">All Statuses</option><option>New</option><option>Contacted</option><option>In Progress</option><option>Converted</option><option>Closed</option></select>
-            <button class="export-btn" onclick="exportCSV('biz')">⬇ Export CSV</button>
-          </div>
-          <div style="overflow-x:auto"><table id="bizTable"><thead><tr><th>Name</th><th>Business</th><th>Email</th><th>Services</th><th>Budget</th><th>Date</th><th>Status</th><th>Action</th></tr></thead><tbody></tbody></table></div>
-        </div>
-      </div>
-      <!-- ALL LEADS -->
-      <div class="admin-page" id="page-all-leads">
-        <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:1.5rem">All Leads</h2>
-        <div class="data-table-wrap">
-          <div class="table-toolbar">
-            <input class="search-input" placeholder="🔍 Search all leads..." oninput="filterTable(this,'allTable')"/>
-            <select class="filter-select" onchange="filterByStatus(this,'allTable')"><option value="">All Statuses</option><option>New</option><option>Contacted</option><option>In Progress</option><option>Converted</option><option>Closed</option></select>
-            <button class="export-btn" onclick="exportCSV('all')">⬇ Export CSV</button>
-          </div>
-          <div style="overflow-x:auto"><table id="allTable"><thead><tr><th>Name</th><th>Type</th><th>Email</th><th>Service</th><th>Date</th><th>Status</th><th>Action</th></tr></thead><tbody></tbody></table></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- LEAD DETAIL MODAL -->
-<div class="modal-overlay" id="detailModal">
-  <div class="modal" style="max-width:560px">
-    <div class="modal-header">
-      <h2 id="detailTitle">Lead Details</h2>
-      <button class="modal-close" onclick="document.getElementById('detailModal').classList.remove('open')">✕</button>
-    </div>
-    <div class="modal-body" id="detailBody"></div>
-  </div>
-</div>
 
 <script>
 // ===== EMAIL CONFIGURATION (using EmailJS integration with a fallback simulation) =====
@@ -1217,18 +1128,18 @@ const revealObserver=new IntersectionObserver(entries=>{
 document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
 
 // ===== ADMIN =====
-function openAdmin(){document.getElementById('loginOverlay').style.display='flex'}
-function doLogin(){
-  const u=document.getElementById('loginUser').value.trim();
-  const p=document.getElementById('loginPass').value.trim();
-  if(u==='admin'&&p==='33admedia2025'){
-    document.getElementById('loginOverlay').style.display='none';
-    document.getElementById('adminOverlay').style.display='flex';
-    loadAdminData();
-  }else{
-    document.getElementById('loginErr').style.display='block';
-  }
-}
+// function openAdmin(){document.getElementById('loginOverlay').style.display='flex'}
+// function doLogin(){
+//   const u=document.getElementById('loginUser').value.trim();
+//   const p=document.getElementById('loginPass').value.trim();
+//   if(u===''&&p===''){
+//     document.getElementById('loginOverlay').style.display='none';
+//     document.getElementById('adminOverlay').style.display='flex';
+//     loadAdminData();
+//   }else{
+//     document.getElementById('loginErr').style.display='block';
+//   }
+// }
 function closeAdmin(){document.getElementById('adminOverlay').style.display='none'}
 function showPage(page){
   document.querySelectorAll('.admin-page').forEach(p=>p.classList.remove('active'));
