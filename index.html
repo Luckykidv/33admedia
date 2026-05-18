@@ -998,7 +998,7 @@ function buildCvSummary(){
 }
 function submitCvForm(){
   const services=[...document.querySelectorAll('#cvServiceOptions .option-card.selected')].map(o=>o.textContent.trim()).join(', ');
-  const lead={id:Date.now(),type:'cv',name:v('cv_name'),email:v('cv_email'),phone:v('cv_phone'),country:v('cv_country'),profession:v('cv_profession'),exp:v('cv_exp'),jobtitle:v('cv_jobtitle'),industry:v('cv_industry'),skills:v('cv_skills'),target:v('cv_target'),services,date:new Date().toISOString(),status:'New',notes:''};
+  const lead={id:Date.now(),type:'cv',name:v('cv_name'),email:v('cv_email'),phone:v('cv_phone'),country:,profession:v('cv_profession'),exp:v('cv_exp'),jobtitle:v('cv_jobtitle'),industry:v('cv_industry'),skills:v('cv_skills'),target:v('cv_target'),services,date:new Date().toISOString(),status:'New',notes:''};
   const leads=getLeads();leads.push(lead);saveLeads(leads);
   showCvStep('success');
 }
