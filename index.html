@@ -17,8 +17,21 @@
   <div class="nav-inner">
     <div style="display: flex; align-items: center; gap: 0.75rem;">
       <!-- Logo Image -->
-      <img src="PRC Career services Logo.png" alt="PRC Career Services Logo" style="height: 42px; width: auto; object-fit: contain; border-radius: 8px;">
-      <a href="#" class="logo">Pro<span>Writers</span></a>
+      <!-- <img src="PRC Career services Logo.png" alt="PRC Career Services Logo" style="height: 42px; width: auto; object-fit: contain; border-radius: 8px;"> -->
+      <img class="logo-desktop" 
+      src="PRC Career services Logo.png" 
+      alt="PRC Career Services Logo" 
+      style="height: 42px;
+       width: auto; 
+       object-fit: contain; 
+       border-radius: 8px;">
+      <img class="logo-mobile" 
+      src="mobile-logo.jpeg" 
+      alt="PRC Consultants Logo" 
+      style="height: 42px;
+       width: auto; 
+       object-fit: contain; border-radius: 8px;">
+      <a href="#" class="logo logo-text">Pro<span>Writers</span></a>
     </div>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
@@ -38,8 +51,8 @@
 <!-- MOBILE NAV MENU -->
 <div id="mobileNav" style="position:fixed;top:68px;left:0;right:0;background:var(--nav-bg);backdrop-filter:blur(16px);z-index:999;border-bottom:1px solid var(--border);padding:1rem 5%;display:none;flex-direction:column;gap:1rem">
   <div style="display: flex; align-items: center; gap: 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); margin-bottom: 0.5rem;">
-    <img src="PRC Career services Logo.png" alt="PRC Career Services Logo" style="height: 30px; width: auto; object-fit: contain; border-radius: 6px;">
-    <span style="font-family: var(--font-display); font-weight: 700; font-size: 1rem;">ProWriters</span>
+    <img src="mobile-logo.jpeg" alt="PRC Career Services Logo" style="height: 30px; width: auto; object-fit: contain; border-radius: 6px;">
+    <!-- <span style="font-family: var(--font-display); font-weight: 700; font-size: 1rem;">ProWriters</span> -->
   </div>
   <a href="#services" onclick="toggleNav()">Services</a>
   <a href="#why-us" onclick="toggleNav()">Why Us</a>
